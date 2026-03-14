@@ -21,7 +21,7 @@ function CareerDetail() {
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%]  mx-auto flex lg:flex-row flex-col justify-between gap-6 '>
             <div className='flex-1 p-6 flex flex-col gap-4 bg-white rounded-lg'>
                 <div className='flex flex-col gap-4'>
-                    <Link href="/" className='w-fit flex items-center gap-2 text-app-green-text'>
+                    <Link href={process.env.NEXT_PUBLIC_CAREERS_URL || "https://careers.codersclutch.com"} className='w-fit flex items-center gap-2 text-app-green-text'>
                         <ChevronLeft />
                         <Typography
                             typo="body-medium-light"
