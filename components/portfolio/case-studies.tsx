@@ -70,7 +70,7 @@ function CaseStudies() {
                                 >{data.title}</Typography>
                                 <div className='flex items-center gap-3 text-app-secondary'>
                                     <Link
-                                        href={`https://portfolio.codersclutch.com/${data.slug}`}
+                                        href={`${process.env.NEXT_PUBLIC_PORTFOLIO_URL || "https://portfolio.codersclutch.com"}/${data.slug}`}
                                         className='text-app-primary-medium'
                                     >
                                         <Send fill='#00312f' />
@@ -103,7 +103,7 @@ function CaseStudies() {
                                     >{data.title}</Typography>
                                     <div className='flex items-center gap-3 text-app-secondary'>
                                         <Link
-                                            href={`https://portfolio.codersclutch.com?tab=caseStudies`}
+                                            href={`${process.env.NEXT_PUBLIC_PORTFOLIO_URL || "https://portfolio.codersclutch.com"}?tab=caseStudies`}
                                             className='text-app-primary-medium'
                                         >
                                             Download

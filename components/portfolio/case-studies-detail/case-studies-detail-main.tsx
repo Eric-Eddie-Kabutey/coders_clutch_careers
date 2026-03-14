@@ -15,7 +15,7 @@ function CaseStudiesDetailMain({ case_study }: CaseStudyDetailMainProps) {
       <div className="w-full h-[45vh] max-h-[500px] py-10 bg-[#e6f6d1]">
         <section className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] h-full mx-auto flex flex-col justify-end gap-4">
           <Link
-            href="https://insights.codersclutch.com/casestudies"
+            href={`${process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com"}/casestudies`}
             className="flex items-center gap-2 text-[#4fce37]"
           >
             <ArrowLeft />
