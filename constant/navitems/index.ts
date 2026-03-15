@@ -156,7 +156,7 @@ export const mobile_nav_links = [
   {
     id: "1",
     nav_name: "Who we are",
-    href: "/about/overview",
+    href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/about/overview`,
     title: "WHO WE ARE",
     sub_title: "Know our story",
     description: "A collective of innovation-driven technology specialists dedicated to transforming businesses through cutting-edge digital solutions and strategic thinking.",
@@ -216,7 +216,7 @@ export const mobile_nav_links = [
   {
     id: "11",
     nav_name: "Product",
-    href: "/products/code-pay",
+    href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/products/code-pay`,
     title: "PRODUCTS",
     sub_title: "Our innovative solutions",
     description: "Discover our suite of proprietary products designed to solve specific industry challenges and deliver exceptional user experiences.",
@@ -233,14 +233,14 @@ export const mobile_nav_links = [
         title: "Ricia Care",
         icon: Heart,
         description: "Integrated healthcare management platform connecting patients ",
-        href: "/"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/`
       },
       {
         id: "4",
         title: "Tour Mate",
         icon: Truck,
         description: "Intelligent travel companion app offering personalized itineraries, real-time navigation, ",
-        href: "/"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/`
       },
     ]
   },
@@ -271,7 +271,7 @@ export const mobile_nav_links = [
         title: "Events",
         icon: Calendar,
         description: "Upcoming webinars, conferences, and workshops where we share ",
-        href: `${process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com"}/event`
+        href: `${process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com"}/events`
       },
     ]
   },
@@ -281,7 +281,7 @@ export const nav_links = [
   {
     id: "1",
     nav_name: "Who we are",
-    href: "/about/overview",
+    href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/about/overview`,
     title: "About US",
     sub_title: "Know our story",
     description: "A collective of innovation-driven technology specialists dedicated to transforming businesses through cutting-edge digital solutions and strategic thinking.",
@@ -319,7 +319,7 @@ export const nav_links = [
         title: "Careers",
         icon: Briefcase,
         description: "Join our team of innovators and discover exciting opportunities to grow your ",
-        href: "/about/careers"
+        href: process.env.NEXT_PUBLIC_CAREERS_URL || "https://careers.codersclutch.com"
       },
       {
         id: "5",
@@ -334,7 +334,7 @@ export const nav_links = [
   {
     id: "2",
     nav_name: "What we do",
-    href: "/solutions/digital-solutions/website-design",
+    href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/digital-solutions/website-design`,
     title: "Solutions",
     sub_title: "Our expertise",
     description: "Comprehensive technology services designed to accelerate your business growth, enhance efficiency, and drive digital transformation at every level.",
@@ -753,7 +753,7 @@ export const nav_links = [
   {
     id: "3",
     nav_name: "Portfolio",
-    href: "/portfolio",
+    href: process.env.NEXT_PUBLIC_PORTFOLIO_URL || "https://portfolio.codersclutch.com",
     title: "Projects",
     sub_title: "Our work speaks for itself",
     description: "Explore our diverse range of successful projects and solutions that demonstrate our technical expertise and creative problem-solving capabilities.",
@@ -792,7 +792,7 @@ export const nav_links = [
   {
     id: "5",
     nav_name: "Insight",
-    href: "/insights",
+    href: process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com",
     title: "Insight",
     sub_title: "Knowledge hub",
     description: "Access our latest research, thought leadership, and industry perspectives to stay ",
@@ -802,21 +802,21 @@ export const nav_links = [
         title: "Case Studies",
         icon: FileText,
         description: "In-depth analyses of our client projects showcasing challenges, solutions, and ",
-        href: "/insights/casestudies"
+        href: `${process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com"}/casestudies`
       },
       {
         id: "2",
         title: "Blog",
         icon: BookOpen,
         description: "Articles and thought pieces on technology trends, digital transformation ",
-        href: "/insights/blog"
+        href: `${process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com"}/blog`
       },
       {
         id: "3",
         title: "Events",
         icon: Calendar,
         description: "Upcoming webinars, conferences, and workshops where we share ",
-        href: "/insights/event"
+        href: `${process.env.NEXT_PUBLIC_INSIGHTS_URL || "https://insights.codersclutch.com"}/events`
       },
     ]
   },

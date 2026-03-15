@@ -72,7 +72,7 @@ function EventsHero() {
                                     </Typography>
                                     
                                     <div className='flex gap-4'>
-                                        <Link href={`/insights/event/${event.event_slug}`} >
+                                        <Link href={`${process.env.NEXT_PUBLIC_INSIGHTS_URL || 'https://insights.codersclutch.com'}/events/${event.event_slug}`} >
                                             <Button
                                                 variant="primary"
                                                 onClick={() => {
