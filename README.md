@@ -1,6 +1,6 @@
 # Coders Clutch Careers
 
-Independent Careers project for Coders Clutch.
+Independent Careers project for Coders Clutch..
 
 ## Subdomain
 [careers.codersclutch.com](https://careers.codersclutch.com)
